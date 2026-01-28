@@ -1,19 +1,19 @@
+import { Link } from 'react-router-dom'
 import './PropertyList.css'
 import logements from '../data/logements.json'
 
-function PropertyList({ onSelect }) {
+function PropertyList() {
   return (
     <div className="property-list">
       {logements.map((logement) => (
-        <button
+        <Link
           key={logement.id}
           className="property-card"
-          type="button"
-          onClick={() => onSelect?.(logement)}
+          to={`/property/${logement.id}`}
         >
           <img src={logement.cover} alt={logement.title} />
           <h3>{logement.title}</h3>
-        </button>
+        </Link>
       ))}
     </div>
   )

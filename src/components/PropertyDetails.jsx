@@ -1,8 +1,15 @@
+import { useMemo } from 'react'
+import { useParams } from 'react-router-dom'
+import logements from '../data/logements.json'
+import NotFound from '../pages/NotFound'
 import './PropertyDetails.css'
 
-function PropertyDetails({ property }) {
+function PropertyDetails() {
+  const { id } = useParams()
+  const property = useMemo(() => logements.find((item) => item.id === id), [id])
+
   if (!property) {
-    return null
+    return <NotFound />
   }
 
   const {
