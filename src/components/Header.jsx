@@ -1,6 +1,14 @@
+import { Link } from 'react-router-dom'
 import './Header.css'
 
-function Header() {
+function Header({ onHomeClick }) {
+  const handleHomeClick = (event) => {
+    if (onHomeClick) {
+      event.preventDefault()
+      onHomeClick()
+    }
+  }
+
   return (
     <header className="header">
       <div className="header-container">
@@ -8,8 +16,8 @@ function Header() {
           <img src="/images/LOGO-2.png" alt="Kasa" />
         </div>
         <nav className="nav">
-          <a href="/" className="nav-link">Accueil</a>
-          <a href="/about" className="nav-link">À propos</a>
+          <Link to="/" className="nav-link" onClick={handleHomeClick}>Accueil</Link>
+          <Link to="/about" className="nav-link">À propos</Link>
         </nav>
       </div>
     </header>

@@ -1,0 +1,29 @@
+.not-found {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem 4rem;
+  color: #ff6060;
+}
+
+.not-found h1 {
+  margin: 0;
+  font-size: clamp(4rem, 18vw, 8rem);
+  font-weight: 700;
+}
+
+.not-found p {
+  margin: 0;
+  font-size: clamp(1rem, 2.6vw, 1.6rem);
+  color: #333;
+}
+
+.not-found__link {
+  color: #ff6060;
+  text-decoration: underline;
+  font-weight: 600;
+}

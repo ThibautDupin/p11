@@ -1,14 +1,19 @@
 import './PropertyList.css'
 import logements from '../data/logements.json'
 
-function PropertyList() {
+function PropertyList({ onSelect }) {
   return (
     <div className="property-list">
       {logements.map((logement) => (
-        <div key={logement.id} className="property-card">
+        <button
+          key={logement.id}
+          className="property-card"
+          type="button"
+          onClick={() => onSelect?.(logement)}
+        >
           <img src={logement.cover} alt={logement.title} />
           <h3>{logement.title}</h3>
-        </div>
+        </button>
       ))}
     </div>
   )
