@@ -36,3 +36,9 @@
 .nav-link.active {
   text-decoration: underline;
 }
+@media (max-width: 768px) {
+  .logo img {
+    height: 35px;
+  }
+
+}

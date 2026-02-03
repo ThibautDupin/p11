@@ -28,9 +28,12 @@
 
 @media (max-width: 768px) {
   .footer {
-    padding: 30px 20px;
+    padding: 20px 0;
   }
-  
+  .footer-container {
+    gap: 10px;
+
+  }
   .footer-logo {
     height: 30px;
   }

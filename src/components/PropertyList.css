@@ -3,7 +3,6 @@
   /* colonnes adaptatives : au moins 280px par card, sinon on s'étire */
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 2rem;
-  padding:2rem;
   max-width: 1240px;
   width: 100%;
   margin: 1rem auto;
@@ -55,7 +54,12 @@
 @media (max-width: 768px) {
   .property-list {
     grid-template-columns: 1fr;
-    gap: 15px;
-    padding: 20px;
+    background-color: transparent;
+    gap:1rem;
   }
+  .property-card{
+    height:255px;
+
+  }
+
 }

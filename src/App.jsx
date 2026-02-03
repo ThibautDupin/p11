@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Header from './components/Header'
-import HomeLogo from './components/Home-logo'
+import Banner from './components/Banner'
 import PropertyList from './components/PropertyList'
 import PropertyDetails from './components/PropertyDetails'
 import Footer from './components/Footer'
@@ -15,7 +15,7 @@ function App() {
           path="/"
           element={
             <main>
-              <HomeLogo />
+              <Banner />
               <PropertyList />
             </main>
           }
