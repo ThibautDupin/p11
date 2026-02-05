@@ -60,7 +60,10 @@ function PropertyDetails() {
         <div className="property-details__host">
           {/* Informations sur l'hôte + photo */}
           <div className="property-details__host-info">
-            <span>{host?.name}</span>
+            <div className="property-details__host-name">
+              <span>{host?.name?.split(' ')[0]}</span>
+              <span>{host?.name?.split(' ').slice(1).join(' ')}</span>
+            </div>
             {host?.picture && (
               <img src={host.picture} alt={host.name} />
             )}

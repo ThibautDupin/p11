@@ -53,5 +53,10 @@
 @media (max-width: 768px) {
   .carousel__control {
     padding: 0.3rem 0.6rem;
+
+  }
+  .carousel{
+    
+    width:auto;
   }
 }
