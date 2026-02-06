@@ -15,11 +15,13 @@ function Carousel({ images = [], title }) {
   }
 
   // Passe à l'image précédente (boucle en fin de liste)
+  // Ex: avec 5 images, (0 - 1 + 5) % 5 = 4
   const goToPrevious = () => {
     setCurrentIndex((index) => (index - 1 + images.length) % images.length)
   }
 
   // Passe à l'image suivante (boucle en début de liste)
+  // Ex: avec 5 images, (4 + 1) % 5 = 0
   const goToNext = () => {
     setCurrentIndex((index) => (index + 1) % images.length)
   }

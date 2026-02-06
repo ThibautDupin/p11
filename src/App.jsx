@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Banner from './components/Banner'
 import PropertyList from './components/PropertyList'
 import PropertyDetails from './components/PropertyDetails'
+import About from './pages/About'
 import Footer from './components/Footer'
 import NotFound from './pages/NotFound'
 function App() {
@@ -21,6 +22,7 @@ function App() {
           }
         />
         <Route path="/property/:id" element={<PropertyDetails />} />
+        <Route path="/about" element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
