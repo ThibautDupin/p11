@@ -1,6 +1,6 @@
 .property-list {
   display: grid;
-  /* colonnes adaptatives : au moins 280px par card, sinon on s'étire */
+  /* colonnes adaptatives : au moins 340px par card, sinon on s'étire */
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 2rem;
   max-width: 1240px;
@@ -9,6 +9,7 @@
   align-items: start;
   background-color: #f6f6f6;
   border-radius:25px;
+  padding:1.5rem;
 }
 
 .property-card {
@@ -56,6 +57,7 @@
     grid-template-columns: 1fr;
     background-color: transparent;
     gap:1rem;
+    padding:0;
   }
   .property-card{
     height:255px;
