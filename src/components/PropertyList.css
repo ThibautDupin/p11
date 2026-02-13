@@ -10,6 +10,7 @@
   background-color: #f6f6f6;
   border-radius:25px;
   padding:1.5rem;
+  box-sizing: border-box;
 }
 
 .property-card {

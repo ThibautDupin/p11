@@ -1,18 +1,24 @@
 #root {
   margin: 0 auto;
   padding: 0;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 main {
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
+  box-sizing: border-box;
+  width:100%;
+  flex: 1;
+
 }
 
 .card {
   padding: 2em;
 }
-
 .read-the-docs {
   color: #888;
 }
