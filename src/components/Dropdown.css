@@ -22,7 +22,7 @@
 
 .dropdown__chevron {
   font-size: 1.1rem;
-  transition: transform 0.25s ease;
+  transition: transform 0.25s ;
 }
 
 .dropdown.is-open .dropdown__chevron {
@@ -30,14 +30,13 @@
 }
 
 .dropdown__panel {
-  padding: 0 1.5rem;
-  color: #333;
+  padding: 0 1.5rem; color: #333;
   max-height: 0;
   overflow: hidden;
   opacity: 0;
   transform: translateY(-6px);
-  transition: max-height 0.3s ease, opacity 0.2s ease, transform 0.2s ease,
-    padding 0.2s ease;
+  transition: max-height 0.3s , opacity 0.2s , transform 0.2s ,
+    padding 0.2s;
 }
 
 .dropdown.is-open .dropdown__panel {
